@@ -1,0 +1,57 @@
+.pgn-card {
+  background: rgba(17, 25, 40, 0.452);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 46vh;
+  max-height: 43vh;
+  padding: 5%;
+  margin: 5% 3% 0% 0%;
+  overflow: auto;
+}
+
+.pgn-table {
+  background: rgba(17, 25, 40, 0.452);
+  font-family: "lato", sans-serif;
+  font-weight: 500;
+  font-size: 1.1em;
+  letter-spacing: 3px;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+.chat-input {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  background: rgba(17, 25, 40, 0.452);
+  font-family: "lato", sans-serif;
+  font-weight: 500;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  color: #fff;
+  border-radius: 30px;
+  width: 90%;
+  padding: 1.2% 1.2% 1.2% 2%;
+  border: none;
+  border-color: transparent;
+}
+@media (max-aspect-ratio: 3/4) {
+  .pgn {
+    margin-top: 16%;
+    width: 100%;
+  }
+  .pgn {
+    padding: 1%;
+  }
+  .pgn-card {
+    margin: 5%;
+    height: 42vh;
+  }
+  .board-setup{
+    margin: 5%;
+    margin-top: 20%;
+    margin-bottom: 20vh;
+}
+}

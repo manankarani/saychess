@@ -1,0 +1,108 @@
+
+@import url(loading.css);
+@import url(board.css);
+@import url(global.css);
+@import url(pgn-tab.css);
+@import url(buttons.css);
+html,
+body {
+  overflow: hidden;
+}
+.nav{
+  display: none;
+}
+.btn-play-cont {
+  display: flex;
+  margin-top: 100%;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 790px) {
+  html,
+  body {
+    overflow: visible;
+  }
+  .nav {
+    display: block;
+  }
+  .sidenav {
+    display: none;
+  }
+  .card-time {
+    font-size: 0.8em;
+  }
+  #title {
+    font-size: 2rem;
+  }
+  .board {
+    width: 100%;
+  }
+  #board{
+    width: 58vw;
+  }
+  .pgn {
+    margin-top: 16%;
+    width: 100%;
+  }
+  .pgn {
+    padding: 1%;
+  }
+  .pgn-card {
+    margin: 5%;
+    height: 42vh;
+  }
+  .board-setup{
+    margin: 5%;
+    margin-top: 5vh;
+    margin-bottom: 20vh;
+}
+}
+
+@media screen and (max-width: 420px) {
+  html,
+  body {
+    overflow: visible;
+  }
+  .nav {
+    display: block;
+  }
+  .sidenav {
+    display: none;
+  }
+  .card-time {
+    font-size: 0.8em;
+  }
+  #title {
+    font-size: 2rem;
+  }
+  .board {
+    width: 100%;
+  }
+  #board{
+    width: 90vw;
+  }
+  .pgn {
+    margin-top: 16%;
+    width: 100%;
+  }
+  .pgn {
+    padding: 1%;
+  }
+  .pgn-card {
+    margin: 5%;
+    height: 42vh;
+  }
+  .board-setup{
+    margin: 5%;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+}
+}
+
+

@@ -1,0 +1,203 @@
+@import url(global.css);
+html,
+body {
+  overflow: hidden;
+}
+
+.sidenav {
+  height: 100vh;
+  padding-top: 15%;
+  border-radius: 0px;
+  background-color: rgba(17, 25, 40, 0.6);
+  border: solid rgba(255, 255, 255, 0.125);
+  border-width: 0px 1px 1px 0;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  
+}
+.sidenav a:hover {
+  color: var(--text-yellow);
+  font-weight: 1000;
+  font-size: 21px;
+}
+.pgn {
+  color: #fff;
+  border-radius: 0px;
+  background-color: rgba(17, 25, 40, 0.6);
+  padding: 2%;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: solid rgba(255, 255, 255, 0.125);
+  border-width: 0px 1px 1px 0;
+}
+.panes {
+  border-radius: 28px;
+  /* background: #363636;
+  box-shadow: -22px -22px 44px #2e2e2e, 22px 22px 44px #3e3e3e;
+  padding: 5%;
+  */
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.pane-btn {
+  border-radius: 21px;
+  /* background: linear-gradient(315deg, #313131, #3a3a3a);
+  box-shadow: -7px -7px 22px #2f2f2f, 7px 7px 22px #3d3d3d;
+  */
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: #fff;
+  font-family: "lato", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.accordion-button:focus {
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--text-yellow);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card-time {
+  font-family: "lato", sans-serif;
+  font-weight: 500;
+  font-size: 1.1em;
+  letter-spacing: 3px;
+  color: #fff;
+  display: inline-block;
+  border-radius: 0px;
+  box-shadow: inset -2px -0px 12px #ffffff36;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.452);
+  width: 80%;
+  margin: auto;
+  margin-bottom: -6px !important;
+  padding: 1.8%;
+}
+.top {
+  border-radius: 20px 20px  0 0px;
+}
+
+.bottom {
+  border-radius: 0px 0px  20px 20px;
+}
+.player:hover {
+  color: var(--text-yellow);
+  cursor: pointer;
+}
+
+.clock {
+  font-weight: 700;
+  font-size: 0.9em;
+  letter-spacing: 3px;
+  float: right;
+  backdrop-filter: blur(0px) saturate(180%);
+  -webkit-backdrop-filter: blur(0px) saturate(10%);
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0.7%;
+  border-radius: 5px;
+}
+
+#board {
+  width: 80%;
+  margin: auto;
+  touch-action: none;
+}
+.board {
+  margin-top: 1.5%;
+}
+#newgame {
+  position: fixed;
+  top: 75%;
+  left: 75%;
+  margin-top: -10px;
+  border-radius: 6px;
+  z-index: 999;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: var(--text-yellow);
+}
+
+#newgame:hover {
+  background: hsl(98 100% 62%);
+}
+#newgame:active {
+  background: hsl(105 100% 62%);
+}
+
+@media screen and (max-width: 756px) {
+  html,
+  body {
+    overflow: visible;
+  }
+  .nav {
+    background-color: rgba(17, 25, 40, 0.75);
+  }
+  .sidenav {
+    display: none;
+  }
+  .board {
+    margin-top: 15%;
+    margin-bottom: 5%;
+    height: 100vh;
+  }
+
+  .card-time {
+    width: 95%;
+  }
+  #title {
+    font-size: 2rem;
+  }
+  .pgn {
+    padding: 1%;
+    background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .card-time {
+    font-size: 0.8em;
+  }
+  #newgame {
+    position: fixed;
+    left: 25%;
+    top: 92%;
+  }
+}
+
+.pgn-card {
+  background: rgba(255, 255, 255, 0.733);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  min-height: 40vh;
+  padding: 1%;
+  margin: 0.5em;
+}

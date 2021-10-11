@@ -1,0 +1,103 @@
+.btn-styled {
+  display: inline-block;
+  margin: 10%;
+  padding: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white !important;
+  width: 100% !important;
+  border-radius: 8px;
+}
+
+.btn-styled-main {
+  display: inline-block;
+  margin: 2%;
+  padding: 1em 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white !important;
+  width: 45% !important;
+  border-radius: 10px;
+  font-family: "lato", sans-serif;
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.btn-styled-play {
+  display: inline-block;
+  border: none;
+  margin: 2%;
+  padding: 0.5em 1.8em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: rgb(8, 45, 54) !important;
+  width: 100% !important;
+  border-radius: 12px;
+  font-family: "lato", sans-serif;
+  font-weight: 900;
+  letter-spacing: 6px;
+  font-size: 1.2em;
+}
+
+/* Demo Stuff End -> */
+
+/* <- Magic Stuff Start */
+
+
+.btn-1 {
+  backdrop-filter: blur(7px) saturate(180%);
+  -webkit-backdrop-filter: blur(7px) saturate(180%);
+  background-color: rgba(220, 242, 255, 0.466);
+}
+
+.btn-1:hover {
+  backdrop-filter: blur(7px) saturate(180%);
+  -webkit-backdrop-filter: blur(7px) saturate(180%);
+  background-color: rgba(244, 251, 255, 0.685);
+}
+
+
+.btn-2 {
+  backdrop-filter: blur(7px) saturate(180%);
+  -webkit-backdrop-filter: blur(7px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.466);
+}
+
+.btn-2:hover {
+  backdrop-filter: blur(7px) saturate(180%);
+  -webkit-backdrop-filter: blur(7px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.363);
+}
+
+.btn-3 {
+  backdrop-filter: blur(7px) saturate(180%);
+  -webkit-backdrop-filter: blur(7px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.034);
+}
+
+.btn-4 {
+  background-image: linear-gradient(
+    to right,
+    #a1c4fd 0%,
+    #c2e9fb 51%,
+    #a1c4fd 100%
+  );
+}
+
+.btn-5 {
+  background-image: linear-gradient(
+    to right,
+    #ffecd2 0%,
+    #fcb69f 51%,
+    #ffecd2 100%
+  );
+}
+
+/* Magic Stuff End -> */

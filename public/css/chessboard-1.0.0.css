@@ -1,0 +1,60 @@
+/*! chessboard.js v1.0.0 | (c) 2019 Chris Oakman | MIT License chessboardjs.com/license */
+
+.clearfix-7da63 {
+  clear: both;
+}
+
+.board-b72b1 {
+  border: 2px solid #ffffff3d;
+  box-sizing: content-box;
+  /*box-shadow: 0px -2px 20px 0px rgba(255, 255, 255, 0.171);*/
+}
+
+.square-55d63 {
+  float: left;
+  position: relative;
+
+  /* disable any native browser highlighting */
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.white-1e1d7 {
+  background-color: rgba(255, 255, 255, 0.884);
+  backdrop-filter: blur(16px)  saturate(180%);;
+  -webkit-backdrop-filter: blur(16px)  saturate(180%);
+  
+  color: #000;
+}
+
+.black-3c85d {
+  background-color: rgba(255, 255, 255, 0.164);
+  color: #f0d9b5;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.highlight1-32417, .highlight2-9c5d2 {
+  box-shadow: inset 0 0 33px 33px #297ab160;
+}
+
+.notation-322f9 {
+  cursor: default;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  position: absolute;
+}
+
+.alpha-d2270 {
+  bottom: 1px;
+  right: 3px;
+}
+
+.numeric-fc462 {
+  top: 2px;
+  left: 2px;
+}
